@@ -16,10 +16,10 @@ const Input = (props) => {
 					value={inputValue}
 					onKeyUp={
 						(e) => {
-						if	(e.key === "Enter") {setTodos(todos.concat(([inputValue])));
+						if	(e.key === "Enter") {
+							setTodos([...todos, {"label": e.target.value, "done": false}]);
 							setInputValue("");
-						}
-					}}
+					}}}
 					></input>
 	);
 };

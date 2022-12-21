@@ -7,7 +7,7 @@ const List = (props) => {
 	return (
 		<>
 		{todos.map ((item, index) => (
-			<div className="border border-secondary p-2"> {item}<div className="final"
+			<div className="border border-secondary p-2"> {item.label}<div className="final"
 			onClick={
 				() => 
 			setTodos(
