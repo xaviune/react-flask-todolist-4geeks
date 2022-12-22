@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Input from "./input.jsx";
 import List from "./list.jsx";
-
+import RefreshButton from "./RefreshButton.jsx";
 
 
 
@@ -38,6 +38,7 @@ const Home = () => {
 					<List todos={todos} setTodos={setTodos}/>
 				</div>
 			<p className="text-secondary">{todos.length} items left</p>
+			<RefreshButton todos={todos} setTodos={setTodos}/>
 			</div>
 		</div>
 	);
