@@ -25,3 +25,10 @@ body{
 .cream-background{
     background: #F9F9F9;
 }
+
+.hide{
+    opacity: 0;
+}
+.show:hover * {
+    opacity: 1;
+  }

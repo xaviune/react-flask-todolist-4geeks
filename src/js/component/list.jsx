@@ -8,14 +8,7 @@ const List = (props) => {
 	return (
 		<>
 		{todos.map ((item, index) => (
-			<div className="border border-secondary p-2"
-			onMouseEnter={
-				e => {setVisivility({visibility: 'visible'})}
-			}
-			onMouseLeave={
-				e => {setVisivility({visibility: 'hidden'})}
-			}
-			> {item.label}<div className="final"
+			<div className="border border-secondary p-2 show"> {item.label}<div className="final hide"
 			onClick={
 				() => 
 			setTodos(
@@ -23,7 +16,7 @@ const List = (props) => {
 					(t, currentIndex) =>
 						index != currentIndex
 			))}>
-				<div style={Visibility}><XIcon size={24}/></div></div></div>
+				<XIcon size={24}/></div></div>
 			))}
 		
 		</>
